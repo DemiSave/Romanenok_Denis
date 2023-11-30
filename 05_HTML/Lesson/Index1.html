@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align = "center">Заполните анкету</h1>
+    <fieldset>
+        <legend> Личные данные </legend>
+        <input type = "Фамилия" placeholder = "Фамилия" required>
+        <p1>text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле)</p1>
+        <br>
+        <input type = "Имя" placeholder = "Имя" required>
+        <p1>text: Только кириллица, без пробелов, длина поля 20, обязательное поле) </p1>
+        <br>
+        <input type = "Отчество" placeholder = "Отчество" required>
+        <p1>text: Только кириллица, без пробелов, длина поля 20, обязательное поле) </p1>
+        </label>
+    <fieldset>
+        <legend>Паспортные данные</legend>
+        <p1>text: Серия - только заглавные две латинские буквы с длиной 2 и максимальным количеством символов 2, количество букв не менее 2, обязательное поле   </p1>
+        <br>
+        <p1>text: Номер паспорта - только цифры с длиной 7 и максимальным количеством символов 7, количество цифр не менее 7, обязательное поле АА 
+        <br>
+            <input type = "AA" placeholder="AA">
+            <input type = "1234567" placeholder="1234567">
+        </fieldset>
+    <fieldset>
+        <legend>Дата рождения</legend>
+        <input type = "2000" placeholder="2000">
+        <p1>text: Год рождения 4-е цифры</p1> 
+        <br>
+        <select name = "list" id = "list">
+            <option value = "1">Январь</option>
+            <option value = "2">Февраль</option>
+            <option value = "3">Март</option>
+            <option value = "4">Апрель</option>
+            <option value = "5">Май</option>
+            <option value = "6">Июнь</option>
+            <option value = "7">Июль</option>
+            <option value = "8">Август</option>
+            <option value = "9">Сентябрь</option>
+            <option value = "10">Октябрь</option>
+            <option value = "11">Ноябрь</option>
+            <option value = "12">Декабрь</option>
+        </select>
+        <br>
+        <input type = "">
+        <p1>number: Диапазон от 1 до 31 с шагом 1</p1>
+    </fieldset>
+    <select name = "list" id = "list">
+            <option value = "1">РБ</option>
+    </select>
+    <p1>(Национальность - выбор одного значения из списка, обязвтельное поле)</p1>
+    <br>
+    <p1>Адрес:</p1>
+    <br>
+    <input type = "Адрес">
+</fieldset >
+    <fieldset>
+        <legend>Интересы</legend>
+        <fieldset>
+            <legend>array: Хобби</legend>
+            <label>  
+                <input type="checkbox" name=“val_1" id="chbox1" > Рыбалка
+                <br>
+                <input type="checkbox" name=“val_1" id="chbox2" > Астрономия 
+                <br>
+                <input type="checkbox" name=“val_1" id="chbox3" > Дайвинг 
+                <br>
+                <input type="checkbox" name=“val_1" id="chbox4" > Марки 
+            </label>                
+        </fieldset>
+        <fieldset>
+            <legend>Домашние животные (возможность выбора нескольких вариантов): </legend>
+            <p1>array: select multiple</p1>
+            <br>
+            <select name="list[]" size="12" multiple id="list"><br>
+                <optgroup label="Попугаи">
+                      <option value="1">Волнистый</option>
+                      <option value="2">Ара</option>
+                      <option value="3">Неразлучник</option>
+                </optgroup>
+                <optgroup label="Рыба">
+                      <option value="4">Караси</option>
+                      <option value="5">Окуни</option>
+                      <option value="6">Осётр</option>
+                </optgroup>
+                <optgroup label="Птицы">
+                    <option value="7">Стая ворон</option>
+                    <option value="8">Аист</option>
+                    <option value="9">Археоптерикс</option>
+              </optgroup>
+                </select>
+        </fieldset>
+    </fieldset>
+        <fieldset>
+        <legend>Данные для входа и восстановления пароля </legend>
+        <input type = "Логин" placeholder = "Логин" required>
+        <p1>text: Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле)</p1>
+        <br>
+        <input type = "Пароль" placeholder = "Пароль" required>
+        <p1>password: Только латицина, без пробелов, не менее 10 символов, длина поля 20, обязательное пол, отключить автозаполнение</p1>
+        </fieldset>
+        <fieldset>
+            <legend>Координаты:</legend>
+            <input type = "Введите адрес электронной почты" placeholder = "Введите адрес электронной почты" required>
+            <p1>email: проверка должна осуществляться при помощи новых атрибутов тега &#8249;input&#8250;</p1>
+            <br>
+            <input type = "Введите адрес сайта" placeholder = "Введите адрес сайта" required>
+            <p1>url: проверка должна осуществлятся при помощи новых атрибутов тега &#8249;input&#8250;</p1>
+        </fieldset>
+        <fieldset>
+        <legend>Цифры</legend>
+        <input type = "">
+        <p1>number: Диапазон от -2.5 до 2.5 с шагом 0.1</p1>
+        <br>
+        <input type="range" min="1" max="10">
+        <p1>range: Максимальное 10 минимальное 1</p1>
+        </fieldset>
+        <fieldset>
+            <legend>Кнопки управления</legend>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить">
+            <br>
+            <input type="image" src="D:\Романёнок\Практика\05_HTML_Фoрмы_Фреймы\source\email.jpg">
+            <p1>&ndash;при нажатии на эту кнопку ничего не происходит </p1>
+        </fieldset>
+</fieldset> 
+</body>
+</html>
